@@ -1,7 +1,7 @@
 <h1>[Java]</h1>
 <h2>2021-01-08</h2>
 <h3>정규 표현식 패턴 일치여부 체크</h3>
-* Pattern.matches(pattern, value)를 이용해서 value가 pattern과 일치하는 지 여부 확인
+* Pattern.matches(pattern, value)를 이용해서 value가 pattern과 일치하는 지 여부 확인<br/>
 * 참고 링크
 (https://coding-factory.tistory.com/529)
 <hr/>
