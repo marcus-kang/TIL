@@ -1,4 +1,10 @@
 <h1>[Java]</h1>
+<h2>2021-01-08</h2>
+<h3>정규 표현식 패턴 일치여부 체크</h3>
+* Pattern.matches(pattern, value)를 이용해서 value가 pattern과 일치하는 지 여부 확인
+* 참고 링크
+(https://coding-factory.tistory.com/529)
+<hr/>
 <h2>2020-12-07 TIL</h2>
 <h3>Java 스케줄링(배치) 설정방법 - Quartz + CronTrigger</h3>
 * 전자정부 프레임워크를 통해 사용됨
