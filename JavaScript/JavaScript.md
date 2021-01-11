@@ -1,8 +1,8 @@
 <h1>[JavaScript]</h1>
 <h2>2021-01-11 TIL</h2>
 <h3>video.play() 에러</h3>
-* video.play() 또는 video.pause() 작동시 발생하는 에러. 크롬 개발자도구에서 아래 메시지 확인
-- Uncaught (in promise) DOMException: The play() request was interrupted by a call to pause()
+* video.play() 또는 video.pause() 작동시 발생하는 에러. 크롬 개발자도구에서 아래 메시지 확인<br/>
+- Uncaught (in promise) DOMException: The play() request was interrupted by a call to pause()<br/>
 * 링크 참고
 (https://developers.google.com/web/updates/2017/06/play-request-was-interrupted)
 <hr/>
