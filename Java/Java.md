@@ -1,5 +1,10 @@
 <h1>[Java]</h1>
-<h2>2021-01-08</h2>
+<h2>2021-01-12 TIL</h2>
+<h3>직렬화(implements Serializable)를 하는 이유</h3>
+* 참고 링크
+(https://okky.kr/article/224715)
+<hr/>
+<h2>2021-01-08 TIL</h2>
 <h3>정규 표현식 패턴 일치여부 체크</h3>
 * Pattern.matches(pattern, value)를 이용해서 value가 pattern과 일치하는 지 여부 확인<br/>
 * 참고 링크
