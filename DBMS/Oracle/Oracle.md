@@ -1,4 +1,8 @@
 <h1>[OracleDB]</h1>
+<h2>2021-01-18 TIL</h2>
+<h3>PLAN, TRACE 읽는 법</h3>
+* 링크 참고(https://devstarsj.github.io/devlopment/2016/02/20/Oracle.read.plan.trace/)
+<hr/>
 <h2>2020-12-20 TIL</h2>
 <h3>2개 이상의 SELECT 결과 합치기</h3>
 컬럼의 수와 데이터타입이 같은 2개 이상의 SELECT 결과는 UNION 명령어를 추가하여 합칠 수 있다.<br/>
