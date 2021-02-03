@@ -1,4 +1,8 @@
 <h1>[OracleDB]</h1>
+<h2>2021-02-03 TIL</h2>
+<h3>USER 비밀번호 변경방법</h3>
+* 링크 참고(https://kyome.tistory.com/6)
+<hr/>
 <h2>2021-01-18 TIL</h2>
 <h3>PLAN, TRACE 읽는 법</h3>
 * 링크 참고(https://devstarsj.github.io/devlopment/2016/02/20/Oracle.read.plan.trace/)
