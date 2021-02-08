@@ -1,4 +1,10 @@
 <h1>[Java]</h1>
+<h2>2021-02-08 TIL</h2>
+<h3>문자열 공백 확인 및 처리</h3>
+* 문자열은 '=='로 비교하지 않고 equals를 사용하여 비교해야 함. 빈 문자열 체크는 Empty와 Blank를 사용 가능하며 차이점은 아래 링크로 확인
+* Empty, Blank 비교 (https://hahaha2016.tistory.com/4)
+* equals와 '=='의 차이점 (https://kmj1107.tistory.com/entry/JAVA-%EB%AC%B8%EC%9E%90%EC%97%B4string-%EB%B9%84%EA%B5%90-equals%EC%99%80-%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90-equals%EC%9D%98-%EB%B0%98%EB%8C%80)
+<hr/>
 <h2>2021-02-04 TIL</h2>
 <h3>Java 클래스 버전 확인</h3>
 * 참고 링크
