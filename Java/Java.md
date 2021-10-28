@@ -1,4 +1,8 @@
 <h1>[Java]</h1>
+<h2>2021-10-28 TIL</h2>
+<h3>클라이언트 실제 접속 IP 가져오기</h3>
+* X-Forwarded-For(XFF) 헤더 활용방법 (https://linked2ev.github.io/java/2019/05/22/JAVA-1.-java-get-clientIP/)<br/>
+<hr/>
 <h2>2021-02-08 TIL</h2>
 <h3>문자열 공백 확인 및 처리</h3>
 * 문자열은 '=='로 비교하지 않고 equals를 사용하여 비교해야 함. 빈 문자열 체크는 Empty와 Blank를 사용 가능하며 차이점은 아래 링크로 확인<br/>
