@@ -1,4 +1,57 @@
 <h1>[OracleDB]</h1>
+<h2>2021-11-02 TIL</h2>
+<h3>시간대/일자/요일/월별 통계 카운트</h3>
+
+* 시간대별<br>
+SELECT TO_CHAR(DATE컬럼, 'HH24') AS 시간대,<br>
+      COUNT(TO_CHAR(DATE컬럼, 'HH24')) AS 숫자<br>
+FROM 데이터테이블<br>
+WHERE #{searchStartDate} <= TO_CHAR(DATE컬럼, 'YYYYMMDD') <br>
+AND #{searchEndDate} >= TO_CHAR(DATE컬럼, 'YYYYMMDD')  <br>
+GROUP BY TO_CHAR(DATE컬럼, 'HH24') <br>
+ORDER BY TO_CHAR(DATE컬럼, 'HH24') ASC <br>
+
+* 일자별<br>
+SELECT T1.일자,<br>
+     NVL(T2.Y_CNT, 0) AS 숫자<br>
+FROM<br>
+     (SELECT 일자<br>
+       FROM<br>
+            (SELECT LPAD(DD, 2, 0) AS 일자<br>
+              FROM<br>
+                   (SELECT LEVEL AS DD<br>
+                     FROM DUAL CONNECT BY LEVEL <= 31<br>
+                   )<br>
+             WHERE DD <= TO_CHAR(LAST_DAY(TO_DATE(#{searchYear}||#{searchMonth},'YYYYMM')),'DD')<br>
+            )<br>
+     ) T1, <br>
+     (SELECT TO_CHAR(DATE컬럼, 'DD') AS 일자, <br>
+               COUNT(TO_CHAR(DATE컬럼, 'DD')) AS 숫자<br>
+          FROM 데이터테이블<br>
+         WHERE TO_CHAR(DATE컬럼, 'YYYY')  = #{searchYear} <br>
+               AND TO_CHAR(DATE컬럼, 'MM')  = #{searchMonth}  <br>
+         GROUP BY TO_CHAR(DATE컬럼, 'DD')<br>
+        ) T2 <br>
+  WHERE T1.일자 = T2.일자(+) <br>
+ORDER BY T1.일자 ASC<br>
+
+* 요일별<br>
+SELECT TO_CHAR(DATE컬럼, 'D') AS 요일, <br>
+      COUNT(TO_CHAR(DATE컬럼, 'D')) AS 숫자<br>
+FROM 데이터테이블<br>
+WHERE TO_CHAR(DATE컬럼, 'YYYY') = #{searchYear} <br>
+AND TO_CHAR(DATE컬럼, 'MM') = #{searchMonth} <br>
+GROUP BY TO_CHAR(DATE컬럼, 'D') <br>
+ORDER BY TO_CHAR(DATE컬럼, 'D') ASC  <br>
+
+* 월별<br>
+SELECT TO_CHAR(DATE컬럼, 'MM') AS 월, <br>
+      COUNT(TO_CHAR(DATE컬럼, 'MM')) AS 숫자<br>
+FROM 데이터테이블<br>
+WHERE TO_CHAR(DATE컬럼, 'YYYY') = #{searchYear}  <br>
+GROUP BY TO_CHAR(DATE컬럼, 'MM') <br>
+ORDER BY TO_CHAR(DATE컬럼, 'MM') ASC<br>
+<hr/>
 <h2>2021-02-03 TIL</h2>
 <h3>USER 비밀번호 변경방법</h3>
 * 링크 참고(https://kyome.tistory.com/6)
