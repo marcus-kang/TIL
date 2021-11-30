@@ -1,4 +1,9 @@
 <h1>[jQuery]</h1>
+<h2>2021-11-30 TIL</h2>
+<h3>Table tr 순서 변경</h3>
+* 링크 참고
+ (https://ktsmemo.cafe24.com/s/jQueryTip/64)
+<hr/>
 <h2>2020-12-28 TIL</h2>
 <h3>전자정부프레임워크 ajax 사용</h3>
 * 아래 링크의 설정방법에서 2.1)은 com-servlet.xml에 설정하였으며, Controller에서는 바로 @ResponseBody 어노테이션을 사용
