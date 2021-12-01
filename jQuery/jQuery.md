@@ -1,4 +1,9 @@
 <h1>[jQuery]</h1>
+<h2>2021-12-01 TIL</h2>
+<h3>ajax String, VO, List, Map 받아오기</h3>
+* 링크 참고
+ (https://jackpang.tistory.com/48)
+<hr/>
 <h2>2021-11-30 TIL</h2>
 <h3>Table tr 순서 변경</h3>
 * 링크 참고
